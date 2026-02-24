@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NoRobot helpt gemeenten, corporaties en organisaties beter communiceren met de mensen die ze bedienen. Met menselijke AI die direct werkt." />
+
+  <title>NoRobot — Beter begrepen worden. Goed voor hen. Goed voor jou.</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="NoRobot — Beter begrepen worden" />
+  <meta property="og:description" content="NoRobot helpt gemeenten, corporaties en organisaties beter communiceren met de mensen die ze bedienen." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://norobot.ai" />
+
+  <!-- Fonts: Lora (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATIE
+       ============================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Hoofdnavigatie">
+    <div class="nav__inner">
+
+      <a href="/" class="nav__logo" aria-label="NoRobot — naar homepage">
+        <span class="logo-no">No</span>Robot
+      </a>
+
+      <button class="nav__toggle" aria-label="Menu openen" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav__links" id="nav-links">
+        <a href="#waarom"    class="nav__link">Waarom NoRobot</a>
+        <a href="#producten" class="nav__link">Producten</a>
+        <a href="#aanpak"    class="nav__link">Aanpak</a>
+        <a href="mailto:hallo@norobot.ai" class="btn btn--primary" style="padding: 0.55rem 1.1rem; font-size: 0.875rem;">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+
+        <!-- Tekst -->
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            Elke dag bellen mensen die je brief niet snapten.
+            <em class="hero__title-em">Wij helpen je dat te veranderen.</em>
+          </h1>
+
+          <p class="hero__subtitle">
+            NoRobot helpt gemeenten, corporaties en organisaties beter communiceren met de mensen die ze bedienen. Met AI die menselijk is, direct werkt en voor iedereen toegankelijk maakt wat je bedoelt.
+          </p>
+
+          <div class="hero__actions">
+            <a href="https://begrijpdit.nl" class="btn btn--primary" target="_blank" rel="noopener">
+              Bekijk BegrijpDit →
+            </a>
+            <a href="mailto:hallo@norobot.ai" class="btn btn--secondary">
+              Neem contact op
+            </a>
+          </div>
+        </div>
+
+        <!-- Illustratie: Potlood/aquarel stijl (SVG) -->
+        <div class="hero__illustration" aria-hidden="true">
+          <svg class="hero-svg" viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustratie van een onduidelijke brief die wordt omgezet naar heldere taal">
+
+            <defs>
+              <!-- Potlood/schets filter: geeft alle vormen een handgetekend uiterlijk -->
+              <filter id="sketch" x="-8%" y="-8%" width="116%" height="116%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.035 0.03" numOctaves="4" seed="7" result="noise"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+              </filter>
+
+              <!-- Aquarel wassen -->
+              <radialGradient id="wash-left" cx="50%" cy="45%" r="55%">
+                <stop offset="0%"   stop-color="#F0E4CC" stop-opacity="0.65"/>
+                <stop offset="80%"  stop-color="#E5D5B5" stop-opacity="0.40"/>
+                <stop offset="100%" stop-color="#DCC8A0" stop-opacity="0.20"/>
+              </radialGradient>
+              <radialGradient id="wash-right" cx="50%" cy="45%" r="55%">
+                <stop offset="0%"   stop-color="#EDE6D8" stop-opacity="0.70"/>
+                <stop offset="80%"  stop-color="#E2D8C8" stop-opacity="0.45"/>
+                <stop offset="100%" stop-color="#D8CCBA" stop-opacity="0.25"/>
+              </radialGradient>
+
+              <!-- Stempel gradient -->
+              <radialGradient id="stamp-wash" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#C85638" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#C85638" stop-opacity="0.04"/>
+              </radialGradient>
+            </defs>
+
+            <!-- ── Achtergrond aquarelwolken ── -->
+            <ellipse cx="168" cy="222" rx="118" ry="108" fill="#F8EFE2" fill-opacity="0.55" filter="url(#sketch)"/>
+            <ellipse cx="392" cy="218" rx="120" ry="110" fill="#F5EBDE" fill-opacity="0.50" filter="url(#sketch)"/>
+
+            <!-- ── Decoratieve stippen ── -->
+            <circle cx="58"  cy="355" r="3.5" fill="#DDD3C5"/>
+            <circle cx="74"  cy="368" r="2"   fill="#DDD3C5" fill-opacity="0.6"/>
+            <circle cx="502" cy="340" r="3"   fill="#DDD3C5"/>
+            <circle cx="488" cy="358" r="2"   fill="#DDD3C5" fill-opacity="0.6"/>
+            <circle cx="278" cy="48"  r="3"   fill="#C85638" fill-opacity="0.3"/>
+            <circle cx="294" cy="62"  r="2"   fill="#C85638" fill-opacity="0.22"/>
+            <circle cx="263" cy="60"  r="1.5" fill="#C85638" fill-opacity="0.2"/>
+
+
+            <!-- ════════════════════════════════
+                 LINKER DOCUMENT (verwarrend)
+                 ════════════════════════════════ -->
+            <g transform="rotate(-7, 168, 218)">
+
+              <!-- Schaduw (diepte) -->
+              <rect x="92" y="121" width="156" height="205" rx="4" fill="#B8A895" fill-opacity="0.22" filter="url(#sketch)"/>
+
+              <!-- Papier -->
+              <rect x="87" y="116" width="156" height="205" rx="4"
+                    fill="url(#wash-left)" stroke="#8B7B6E" stroke-width="2"
+                    filter="url(#sketch)"/>
+
+              <!-- Brievenhoofdregel (onleesbaar blok) -->
+              <rect x="101" y="130" width="130" height="14" rx="2"
+                    fill="#8B7B6E" fill-opacity="0.14" filter="url(#sketch)"/>
+
+              <!-- Dichte, dicht-op-elkaar regels = bureaucratische tekst -->
+              <g filter="url(#sketch)" stroke="#8B7B6E" stroke-linecap="round">
+                <line x1="101" y1="158" x2="230" y2="157" stroke-width="1.5"/>
+                <line x1="101" y1="170" x2="227" y2="170" stroke-width="1.4"/>
+                <line x1="101" y1="182" x2="231" y2="181" stroke-width="1.5"/>
+                <line x1="101" y1="194" x2="228" y2="194" stroke-width="1.3"/>
+                <line x1="101" y1="206" x2="230" y2="205" stroke-width="1.5"/>
+                <line x1="101" y1="218" x2="226" y2="219" stroke-width="1.4"/>
+                <line x1="101" y1="230" x2="229" y2="230" stroke-width="1.5"/>
+                <line x1="101" y1="242" x2="227" y2="241" stroke-width="1.3"/>
+                <line x1="101" y1="254" x2="231" y2="254" stroke-width="1.5"/>
+                <line x1="101" y1="266" x2="225" y2="267" stroke-width="1.4"/>
+                <!-- Korte alinea-afsluiter -->
+                <line x1="101" y1="280" x2="158" y2="280" stroke-width="1.4"/>
+              </g>
+
+              <!-- Bureaucratische stempel -->
+              <g filter="url(#sketch)">
+                <circle cx="218" cy="299" r="22" fill="url(#stamp-wash)" stroke="#C85638" stroke-width="2" stroke-opacity="0.55"/>
+                <circle cx="218" cy="299" r="16" fill="none" stroke="#C85638" stroke-width="1" stroke-opacity="0.35"/>
+                <line x1="208" y1="299" x2="228" y2="299" stroke="#C85638" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.5"/>
+                <line x1="218" y1="289" x2="218" y2="309" stroke="#C85638" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.5"/>
+              </g>
+
+            </g>
+
+            <!-- Drijvende vraagtekens (buiten rotatie-groep) -->
+            <text x="92"  y="105" font-family="Georgia, serif" font-size="34" fill="#C85638" fill-opacity="0.80" filter="url(#sketch)">?</text>
+            <text x="195" y="93"  font-family="Georgia, serif" font-size="22" fill="#C85638" fill-opacity="0.60" filter="url(#sketch)">?</text>
+            <text x="162" y="97"  font-family="Georgia, serif" font-size="15" fill="#C85638" fill-opacity="0.45" filter="url(#sketch)">!</text>
+
+
+            <!-- ════════════════════════════════
+                 PIJL (transformatie)
+                 ════════════════════════════════ -->
+            <g filter="url(#sketch)">
+              <!-- Pijlboog -->
+              <path d="M 256 226 C 266 212, 284 208, 298 218"
+                    fill="none" stroke="#C85638" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Pijlpunt -->
+              <path d="M 293 213 L 300 220 L 291 224"
+                    fill="none" stroke="#C85638" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Klein NoRobot-vonkje -->
+              <circle cx="277" cy="206" r="3" fill="#C85638" fill-opacity="0.35"/>
+            </g>
+
+
+            <!-- ════════════════════════════════
+                 RECHTER DOCUMENT (helder)
+                 ════════════════════════════════ -->
+            <g transform="rotate(5, 392, 216)">
+
+              <!-- Schaduw -->
+              <rect x="314" y="121" width="160" height="210" rx="4" fill="#B8A895" fill-opacity="0.18" filter="url(#sketch)"/>
+
+              <!-- Papier -->
+              <rect x="309" y="116" width="160" height="210" rx="4"
+                    fill="url(#wash-right)" stroke="#5C4F44" stroke-width="2"
+                    filter="url(#sketch)"/>
+
+              <!-- Duidelijke koptekst -->
+              <g filter="url(#sketch)">
+                <line x1="323" y1="138" x2="441" y2="138" stroke="#3D3530" stroke-width="3"   stroke-linecap="round"/>
+                <line x1="323" y1="151" x2="400" y2="151" stroke="#3D3530" stroke-width="1.8" stroke-linecap="round"/>
+              </g>
+
+              <!-- Scheidingslijn -->
+              <line x1="323" y1="166" x2="455" y2="166" stroke="#DDD3C5" stroke-width="1" filter="url(#sketch)"/>
+
+              <!-- Bulletpunten met vinkjes -->
+              <!-- Item 1 -->
+              <g filter="url(#sketch)">
+                <circle cx="334" cy="184" r="7.5" fill="#5C7A5C" fill-opacity="0.14" stroke="#5C7A5C" stroke-width="1.5"/>
+                <path d="M 330 184 L 334 188 L 340 179" fill="none" stroke="#5C7A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="348" y1="184" x2="457" y2="183" stroke="#4A3F35" stroke-width="1.5" stroke-linecap="round"/>
+              </g>
+
+              <!-- Item 2 -->
+              <g filter="url(#sketch)">
+                <circle cx="334" cy="207" r="7.5" fill="#5C7A5C" fill-opacity="0.14" stroke="#5C7A5C" stroke-width="1.5"/>
+                <path d="M 330 207 L 334 211 L 340 202" fill="none" stroke="#5C7A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="348" y1="207" x2="455" y2="207" stroke="#4A3F35" stroke-width="1.5" stroke-linecap="round"/>
+              </g>
+
+              <!-- Item 3 -->
+              <g filter="url(#sketch)">
+                <circle cx="334" cy="230" r="7.5" fill="#5C7A5C" fill-opacity="0.14" stroke="#5C7A5C" stroke-width="1.5"/>
+                <path d="M 330 230 L 334 234 L 340 225" fill="none" stroke="#5C7A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="348" y1="230" x2="453" y2="230" stroke="#4A3F35" stroke-width="1.5" stroke-linecap="round"/>
+              </g>
+
+              <!-- Actievak (terracotta): "Wat moet ik doen?" -->
+              <g filter="url(#sketch)">
+                <rect x="323" y="253" width="100" height="45" rx="5"
+                      fill="#C85638" fill-opacity="0.09"
+                      stroke="#C85638" stroke-width="1.5"/>
+                <line x1="333" y1="266" x2="413" y2="266" stroke="#C85638" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="333" y1="279" x2="400" y2="279" stroke="#C85638" stroke-width="1.5" stroke-linecap="round"/>
+              </g>
+
+            </g>
+
+            <!-- Groot vinkje boven rechter document -->
+            <g filter="url(#sketch)">
+              <circle cx="456" cy="88" r="20" fill="#5C7A5C" fill-opacity="0.14" stroke="#5C7A5C" stroke-width="2"/>
+              <path d="M 447 88 L 454 95 L 465 80" fill="none" stroke="#5C7A5C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+
+            <!-- Subtiele golvende voetlijn (aquarelstreek) -->
+            <path d="M 38 408 Q 100 398, 165 408 Q 228 418, 280 408 Q 332 398, 395 408 Q 455 418, 522 408"
+                  fill="none" stroke="#E0D4C4" stroke-width="1.5" stroke-linecap="round" filter="url(#sketch)"/>
+
+          </svg>
+        </div><!-- /.hero__illustration -->
+
+      </div><!-- /.container -->
+    </section><!-- /#hero -->
+
+
+    <!-- ============================================================
+         WAAROM NOROBOT — DE WIN-WIN
+         ============================================================ -->
+    <section class="waarom" id="waarom" aria-labelledby="waarom-title">
+      <div class="container">
+
+        <span class="label fade-up">Waarom NoRobot</span>
+
+        <div class="waarom__intro fade-up">
+          <h2 id="waarom-title">
+            Beter begrepen worden. Goed voor hen. Goed voor jou.
+          </h2>
+          <p>
+            Als mensen begrijpen wat je bedoelt, hoeven ze niet te bellen. Als ze weten wat van hen verwacht wordt, handelen ze ook. Dat klinkt eenvoudig, en dat is het ook. Maar de praktijk vraagt om een andere aanpak.
+          </p>
+          <p>
+            NoRobot brengt die aanpak. Niet als groot IT-project, maar als tool die morgen al werkt.
+          </p>
+        </div>
+
+        <div class="vp-grid stagger">
+
+          <div class="vp-item">
+            <span class="vp-item__number">01</span>
+            <h3>Minder telefoontjes</h3>
+            <p>
+              Burgers en klanten die je communicatie begrijpen, bellen minder. Minder druk op de helpdesk, meer ruimte voor de vragen die er echt toe doen.
+            </p>
+          </div>
+
+          <div class="vp-item">
+            <span class="vp-item__number">02</span>
+            <h3>Minder bezwaren</h3>
+            <p>
+              Onduidelijke communicatie leidt tot weerstand. Heldere communicatie leidt tot begrip. Het verschil zit in de woorden.
+            </p>
+          </div>
+
+          <div class="vp-item">
+            <span class="vp-item__number">03</span>
+            <h3>Hogere naleving</h3>
+            <p>
+              Als mensen weten wat er van hen verwacht wordt, en wanneer, handelen ze. Snellere betalingen, minder uitval, minder herinneringen.
+            </p>
+          </div>
+
+          <div class="vp-item">
+            <span class="vp-item__number">04</span>
+            <h3>Betere bereikbaarheid</h3>
+            <p>
+              Niet iedereen leest even makkelijk. Toegankelijke communicatie bereikt meer mensen, ook degenen die anders afhaken.
+            </p>
+          </div>
+
+        </div><!-- /.vp-grid -->
+
+      </div>
+    </section><!-- /#waarom -->
+
+
+    <!-- ============================================================
+         STATISTIEKEN
+         ============================================================ -->
+    <section class="stats-section" aria-label="Statistieken over laaggeletterdheid en miscommunicatie">
+      <div class="container">
+
+        <div class="stats stagger">
+
+          <div class="stat">
+            <div class="stat__number"
+                 data-to="2.5" data-dec="1" data-suf=" mln"
+                 aria-label="2,5 miljoen">
+              2,5 mln
+            </div>
+            <p class="stat__text">
+              Nederlanders zijn laaggeletterd of begrijpen officiële communicatie niet.
+            </p>
+            <span class="stat__source">Stichting Lezen &amp; Schrijven</span>
+          </div>
+
+          <div class="stat">
+            <div class="stat__number"
+                 data-to="30" data-dec="0" data-suf="%"
+                 aria-label="30 procent">
+              30%
+            </div>
+            <p class="stat__text">
+              Van de Nederlanders vindt communicatie van overheid en instanties te ingewikkeld.
+            </p>
+            <span class="stat__source">Onderzoek klantcontact.nl</span>
+          </div>
+
+          <div class="stat">
+            <div class="stat__number"
+                 data-to="1.1" data-dec="1" data-pre="€" data-suf=" mrd"
+                 aria-label="1,1 miljard euro">
+              €1,1 mrd
+            </div>
+            <p class="stat__text">
+              Jaarlijkse maatschappelijke kosten van laaggeletterdheid in Nederland.
+            </p>
+            <span class="stat__source">PwC onderzoek</span>
+          </div>
+
+        </div><!-- /.stats -->
+
+      </div>
+    </section><!-- /.stats-section -->
+
+
+    <!-- ============================================================
+         PRODUCTEN
+         ============================================================ -->
+    <section class="producten section" id="producten" aria-labelledby="producten-title">
+      <div class="container">
+
+        <div class="section__header fade-up">
+          <div class="section__header-text">
+            <span class="label">Onze producten</span>
+            <h2 id="producten-title">Eén suite. Drie tools. Één doel.</h2>
+            <p class="section__lead">
+              Alle NoRobot-producten zijn white-label beschikbaar. Op jouw subdomein, in jouw huisstijl. Geen IT-project, geen lange implementatie. Gewoon live.
+            </p>
+            <p class="section__note">
+              Licenties vanaf €5.000 per jaar. Altijd starten met een pilot.
+            </p>
+          </div>
+        </div>
+
+        <div class="products-grid stagger">
+
+          <!-- BegrijpDit -->
+          <article class="product-card product-card--available">
+            <div class="product-card__top">
+              <!-- Document + loep icoon -->
+              <svg class="product-icon" viewBox="0 0 48 48" width="38" height="38" fill="none" aria-hidden="true">
+                <rect x="7" y="4" width="24" height="32" rx="3" stroke="currentColor" stroke-width="2"/>
+                <line x1="13" y1="13" x2="25" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="13" y1="20" x2="25" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="13" y1="27" x2="21" y2="27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="34" cy="35" r="8" stroke="currentColor" stroke-width="2"/>
+                <line x1="39.5" y1="40.5" x2="44" y2="45" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+              <span class="status-chip status-chip--available">Nu beschikbaar</span>
+            </div>
+            <h3>BegrijpDit</h3>
+            <p>
+              Elke officiële brief, mail of besluit vertaald naar gewone taal. Inclusief wat de ontvanger moet doen, en wat er gebeurt als hij niets doet.
+            </p>
+            <a href="https://begrijpdit.nl" class="product-link" target="_blank" rel="noopener">
+              Probeer gratis →
+            </a>
+          </article>
+
+          <!-- SchrijfDit -->
+          <article class="product-card">
+            <div class="product-card__top">
+              <!-- Pen/potlood icoon -->
+              <svg class="product-icon" viewBox="0 0 48 48" width="38" height="38" fill="none" aria-hidden="true" style="color: var(--ink-muted)">
+                <path d="M 32 5 L 43 16 L 16 43 L 5 43 L 5 32 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <line x1="27" y1="10" x2="38" y2="21" stroke="currentColor" stroke-width="1.8"/>
+                <line x1="5"  y1="32" x2="16" y2="43" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+              <span class="status-chip status-chip--pro">In Pro pakket</span>
+            </div>
+            <h3>SchrijfDit</h3>
+            <p>
+              Schrijft een correcte reactiebrief in begrijpelijke taal, klaar om te versturen. Inclusief referentienummer en juiste aanhef.
+            </p>
+            <a href="mailto:hallo@norobot.ai" class="product-link">
+              Meer informatie →
+            </a>
+          </article>
+
+          <!-- VraagDit -->
+          <article class="product-card product-card--coming">
+            <div class="product-card__top">
+              <!-- Spraakwolk + vraagteken icoon -->
+              <svg class="product-icon" viewBox="0 0 48 48" width="38" height="38" fill="none" aria-hidden="true" style="color: var(--ink-light)">
+                <path d="M 6 6 L 42 6 L 42 32 L 28 32 L 22 42 L 16 32 L 6 32 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <text x="24" y="25" text-anchor="middle" font-size="16" fill="currentColor" font-family="Georgia, serif" stroke="none">?</text>
+              </svg>
+              <span class="status-chip status-chip--coming">In ontwikkeling</span>
+            </div>
+            <h3>VraagDit</h3>
+            <p>
+              Stelt vragen aan instanties zonder drempel. Formuleert professioneel, stuurt op de juiste manier door.
+            </p>
+            <span class="product-link product-link--disabled">Binnenkort beschikbaar</span>
+          </article>
+
+        </div><!-- /.products-grid -->
+
+      </div>
+    </section><!-- /#producten -->
+
+
+    <!-- ============================================================
+         AANPAK
+         ============================================================ -->
+    <section class="aanpak" id="aanpak" aria-labelledby="aanpak-title">
+      <div class="container">
+
+        <div class="section__header fade-up">
+          <span class="label">Hoe het werkt</span>
+          <h2 id="aanpak-title">Binnen een week live. Zonder IT-project.</h2>
+        </div>
+
+        <div class="aanpak-grid stagger">
+
+          <div class="aanpak-item">
+            <span class="aanpak-item__number">01</span>
+            <h3>In jouw huisstijl</h3>
+            <p>
+              Op jouw subdomein, met jouw logo en kleuren. Jouw klanten en burgers zien een vertrouwde omgeving.
+            </p>
+          </div>
+
+          <div class="aanpak-item">
+            <span class="aanpak-item__number">02</span>
+            <h3>Geen koppeling nodig</h3>
+            <p>
+              Geen integratie met bestaande systemen. Geen lange implementatie. Jij bepaalt wanneer je start.
+            </p>
+          </div>
+
+          <div class="aanpak-item">
+            <span class="aanpak-item__number">03</span>
+            <h3>Privacy by design</h3>
+            <p>
+              Persoonsgegevens worden geanonimiseerd voor verwerking. Geen opslag. Verwerkersovereenkomst beschikbaar. AVG-compliant.
+            </p>
+          </div>
+
+          <div class="aanpak-item">
+            <span class="aanpak-item__number">04</span>
+            <h3>Europese infrastructuur</h3>
+            <p>
+              Verwerking op Europese servers. Data blijft in de EU. Volledig in lijn met overheidsrichtlijnen.
+            </p>
+          </div>
+
+        </div><!-- /.aanpak-grid -->
+
+      </div>
+    </section><!-- /#aanpak -->
+
+
+    <!-- ============================================================
+         CTA
+         ============================================================ -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="fade-up">
+          <span class="label label--light">Samen beginnen</span>
+          <h2 id="cta-title">
+            Eén gesprek.<br>Daarna weet je of het past.
+          </h2>
+          <p>
+            We starten altijd met een pilot. Zodat je zelf ziet wat het oplevert voor jouw organisatie, zonder lang traject of grote investering.
+          </p>
+          <div class="cta-section__actions">
+            <a href="mailto:hallo@norobot.ai" class="btn btn--primary">
+              Stuur een mail →
+            </a>
+            <a href="https://begrijpdit.nl" class="btn btn--outline-light" target="_blank" rel="noopener">
+              Bekijk de demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__inner">
+        <a href="/" class="footer__logo" aria-label="NoRobot — naar homepage">
+          <span class="logo-no">No</span>Robot
+        </a>
+        <nav class="footer__nav" aria-label="Footernavigatie">
+          <a href="https://begrijpdit.nl" class="footer__link" target="_blank" rel="noopener">BegrijpDit</a>
+          <a href="mailto:hallo@norobot.ai" class="footer__link">hallo@norobot.ai</a>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 NoRobot</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
